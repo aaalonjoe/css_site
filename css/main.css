@@ -34,7 +34,7 @@ header {
 header .inner-header {
   width: 90%;
 }
-header .inner-header .logo {
+header .inner-header .logo a {
   float: left;
   font-weight: 700;
   font-size: 55px;
@@ -56,7 +56,7 @@ header .inner-header .menu ul li a:hover {
 
 /* main */
 section.main {
-  background: #ccc url(../img/main.jpg) no-repeat center;
+  background: #ccc url(../img/bg.jpg) no-repeat center/cover;
   height: 1000px;
   /* border-bottom: 1px solid #000; */
 }
@@ -69,7 +69,7 @@ section.main .main-title p {
   transform: translate(-50%, -50%);
 }
 section.main .main-title h2 {
-  font-size: 150px;
+  font-size: 120px;
 
   position: absolute;
   left: 50%;
@@ -81,7 +81,7 @@ section.main .main-title ul {
 
   position: absolute;
   left: 50%;
-  top: 80%;
+  top: 65%;
   transform: translate(-50%, -50%);
 }
 section.main .main-title ul li {
@@ -103,8 +103,12 @@ section.main .main-title > a {
 
   position: absolute;
   left: 50%;
-  top: 90%;
+  top: 80%;
   transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+section.main .main-title > a:hover {
+  color: green;
 }
 
 /* intro */
@@ -140,23 +144,37 @@ section.intro a:hover {
 section.work {
   margin-top: 30px;
 }
-section.work h2 {
+.wrap h2 {
   text-align: center;
   font-size: 40px;
   margin-bottom: 90px;
 }
-section.work .sub-title {
-  width: 90%;
-  background: orange;
+.wrap .sub-title {
+  width: 80%;
 }
-section.work .sub-title h3 {
+section.work .sub-title .nav {
+  /* background: orange; */
+  margin-bottom: 30px;
+}
+section.work .sub-title .nav h3 {
   float: left;
+  margin-top: 25px;
+  /* background: skyblue; */
 }
-section.work .sub-title p {
+section.work .sub-title .nav p {
   float: right;
   width: 385px;
   line-height: 1.6;
+  /* background: pink; */
 }
-section.work .sub-title a {
+section.work .sub-title .img-main2 {
   width: 100%;
 }
+section.work .sub-title .img-main2 a:hover img {
+  transform: scale(0.95);
+  transition: 0.5s;
+}
+section.work .sub-title .img-main2 a img {
+  width: 100%;
+}
+
