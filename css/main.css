@@ -1,0 +1,162 @@
+/* common */
+* {
+  margin: 0 auto;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+  font-size: 15px;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* header */
+body {
+  height: 2000px;
+}
+
+header {
+  border-bottom: 1px solid #000;
+  height: 100px;
+  line-height: 100px;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}
+header .inner-header {
+  width: 90%;
+}
+header .inner-header .logo {
+  float: left;
+  font-weight: 700;
+  font-size: 55px;
+}
+header .inner-header .menu {
+  float: right;
+}
+header .inner-header .menu ul li {
+  float: left;
+  /* background: skyblue; */
+  margin-left: 50px;
+}
+header .inner-header .menu ul li a {
+  display: block;
+}
+header .inner-header .menu ul li a:hover {
+  color: green;
+}
+
+/* main */
+section.main {
+  background: #ccc url(../img/main.jpg) no-repeat center;
+  height: 1000px;
+  /* border-bottom: 1px solid #000; */
+}
+section.main .main-title p {
+  font-size: 200px;
+
+  position: absolute;
+  left: 50%;
+  top: 32%;
+  transform: translate(-50%, -50%);
+}
+section.main .main-title h2 {
+  font-size: 150px;
+
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}
+section.main .main-title ul {
+  /* background: orange; */
+
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -50%);
+}
+section.main .main-title ul li {
+  float: left;
+  margin-right: 40px;
+}
+section.main .main-title ul li:last-child {
+  margin-right: 0;
+}
+section.main .main-title ul li a {
+  font-weight: 700;
+  font-size: 19px;
+}
+section.main .main-title ul li a:hover {
+  color: green;
+}
+section.main .main-title > a {
+  font-size: 70px;
+
+  position: absolute;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
+}
+
+/* intro */
+section.intro {
+  width: 900px;
+  margin: 0 auto;
+  /* background: orange; */
+  padding: 100px 0;
+}
+section.intro p {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1.6em;
+  margin-bottom: 70px;
+}
+section.intro a {
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  width: 100px;
+  padding: 10px 30px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  background: #fff;
+  transition: 0.4s;
+}
+section.intro a:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* work */
+section.work {
+  margin-top: 30px;
+}
+section.work h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 90px;
+}
+section.work .sub-title {
+  width: 90%;
+  background: orange;
+}
+section.work .sub-title h3 {
+  float: left;
+}
+section.work .sub-title p {
+  float: right;
+  width: 385px;
+  line-height: 1.6;
+}
+section.work .sub-title a {
+  width: 100%;
+}
